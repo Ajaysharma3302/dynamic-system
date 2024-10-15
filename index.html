@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Step 1: Create input fields for product details -->
+    <div>
+      <input type="text" placeholder="Product Name" id="ProductName" />
+      <input type="text" placeholder="Price" id="productPrice" />
+      <input type="text" placeholder="Rating(1-5)" id="productRating" />
+
+      <!-- Step 9: Create buttons for sorting -->
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+    <div>
+      <button onclick="sortData('price')">Sort by Price</button>
+      <button onclick="sortData('rating')">Sort by Rating</button>
+    </div>
+
+    <div class="graphs">
+      <div id="priceGraph" class="graph"></div>
+      <div id="ratingGraph" class="graph"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
